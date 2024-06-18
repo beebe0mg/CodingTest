@@ -4,7 +4,6 @@ function solution(n) {
     n = n.split("");
     n = n.sort();
     n = n.reverse();
-    n = n.map(Number);
     answer = n.join('');
     return Number(answer);
 }
