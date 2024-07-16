@@ -1,12 +1,9 @@
 function solution(arr) {
     var answer = [];
-    let an = Math.min(...arr);
-    for(let v of arr){
-        if(v !== an){
-            answer.push(v);
-        }
+    var arr1 = Math.min(...arr);
+    for(let i of arr) {
+        if(i !== arr1) answer.push(i);
     }
-    if(arr.length === 1) 
-        answer.push(-1);
+    if(arr.length === 1) answer.push(-1);
     return answer;
 }
