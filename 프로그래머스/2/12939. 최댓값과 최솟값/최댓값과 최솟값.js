@@ -1,12 +1,6 @@
 function solution(s) {
     var answer = '';
     var arr1 = s.split(" ");
-    arr1.sort(function(a, b){
-        return a - b;
-    })
-    var str = arr1.shift();
-    answer += str;
-    answer += " ";
-    answer += arr1.pop();
+    answer = Math.min(...arr1) + ' ' + Math.max(...arr1);
     return answer;
 }
